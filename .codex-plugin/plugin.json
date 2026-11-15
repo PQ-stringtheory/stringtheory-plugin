@@ -1,6 +1,6 @@
 {
   "name": "stringtheory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
   "author": {
     "name": "PQ Labs",
@@ -25,7 +25,7 @@
   "interface": {
     "displayName": "StringTheory",
     "shortDescription": "Trace U.S. campaign money, lobbying, bills, and congressional votes with primary-source receipts.",
-    "longDescription": "Investigate U.S. campaign finance (FEC Schedule A/B/E and Super PACs), lobbying disclosures (Senate LDA), congressional roll-call votes, STOCK Act stock trades, and clause-by-clause federal bill text X-rays — backed by verifiable primary-source receipts from StringTheory.",
+    "longDescription": "Investigate U.S. campaign finance (FEC Schedule A/B/E and Super PACs), lobbying disclosures (Senate LDA), congressional roll-call votes, STOCK Act stock trades, and clause-by-clause federal bill text X-rays \u2014 backed by verifiable primary-source receipts from StringTheory.",
     "developerName": "PQ Labs",
     "category": "Research",
     "capabilities": [

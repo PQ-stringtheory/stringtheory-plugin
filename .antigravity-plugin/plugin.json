@@ -1,7 +1,7 @@
 {
   "name": "stringtheory",
   "displayName": "StringTheory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
   "logo": "assets/logo.svg",
   "suggestedPrompts": [
