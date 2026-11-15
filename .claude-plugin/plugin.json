@@ -1,0 +1,24 @@
+{
+  "name": "stringtheory",
+  "version": "1.0.0",
+  "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
+  "author": {
+    "name": "PQ Labs",
+    "email": "support@pqlabs.org",
+    "url": "https://theory.pqlabs.org"
+  },
+  "homepage": "https://theory.pqlabs.org/developers",
+  "repository": "https://github.com/PQ-stringtheory/stringtheory-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "stringtheory",
+    "civic",
+    "congress",
+    "campaign-finance",
+    "legislation",
+    "lobbying",
+    "fec",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "stringtheory": {
+      "serverUrl": "https://theory.pqlabs.org/api/mcp"
+    }
+  }
+}

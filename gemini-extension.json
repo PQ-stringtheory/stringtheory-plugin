@@ -1,0 +1,11 @@
+{
+  "name": "stringtheory",
+  "version": "1.0.0",
+  "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "stringtheory": {
+      "httpUrl": "https://theory.pqlabs.org/api/mcp"
+    }
+  }
+}

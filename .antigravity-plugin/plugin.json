@@ -1,0 +1,30 @@
+{
+  "name": "stringtheory",
+  "displayName": "StringTheory",
+  "version": "1.0.0",
+  "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Trace top industry donors and recent key votes for my senators",
+    "X-ray what a federal bill actually changes clause by clause",
+    "Verify a claim about Super PAC spending in a 2026 Senate race"
+  ],
+  "author": {
+    "name": "PQ Labs",
+    "email": "support@pqlabs.org",
+    "url": "https://theory.pqlabs.org"
+  },
+  "homepage": "https://theory.pqlabs.org/developers",
+  "repository": "https://github.com/PQ-stringtheory/stringtheory-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "stringtheory",
+    "civic",
+    "congress",
+    "campaign-finance",
+    "legislation",
+    "lobbying",
+    "fec",
+    "mcp"
+  ]
+}

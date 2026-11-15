@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "stringtheory-marketplace",
+  "description": "Official StringTheory MCP server and civic research skills for Claude Code.",
+  "owner": {
+    "name": "PQ Labs",
+    "email": "support@pqlabs.org"
+  },
+  "plugins": [
+    {
+      "name": "stringtheory",
+      "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
+      "version": "1.0.0",
+      "author": {
+        "name": "PQ Labs",
+        "email": "support@pqlabs.org",
+        "url": "https://theory.pqlabs.org"
+      },
+      "homepage": "https://theory.pqlabs.org/developers",
+      "repository": "https://github.com/PQ-stringtheory/stringtheory-plugin",
+      "license": "Apache-2.0",
+      "source": "./"
+    }
+  ]
+}

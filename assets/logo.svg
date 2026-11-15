@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-label="StringTheory">
+  <title>StringTheory</title>
+  <desc>Three pinned civic nodes (politician, legislation, and campaign money) connected by String Red threads on a warm ivory board.</desc>
+
+  <!-- Rounded square warm-ivory board with >= 10% safe margin for light & dark themes -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="#FAF6F1" stroke="#E5DDD2" stroke-width="6"/>
+
+  <!-- String Red (#C0392B) connecting thread triangle -->
+  <line x1="168" y1="176" x2="344" y2="176" stroke="#C0392B" stroke-width="18" stroke-linecap="round"/>
+  <line x1="344" y1="176" x2="256" y2="356" stroke="#C0392B" stroke-width="18" stroke-linecap="round"/>
+  <line x1="256" y1="356" x2="168" y2="176" stroke="#C0392B" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Top-left node (168, 176): Politician silhouette on Dark Charcoal (#1A1A2E) -->
+  <circle cx="168" cy="176" r="56" fill="#1A1A2E"/>
+  <circle cx="168" cy="157" r="15" fill="#FAF6F1"/>
+  <path d="M139 201 C139 184 151 177 168 177 C185 177 197 184 197 201 C197 204 194.5 206.5 191.5 206.5 H144.5 C141.5 206.5 139 204 139 201 Z" fill="#FAF6F1"/>
+
+  <!-- Top-right node (344, 176): Bill / statutory document lines on Dark Charcoal (#1A1A2E) -->
+  <circle cx="344" cy="176" r="56" fill="#1A1A2E"/>
+  <rect x="320" y="145" width="48" height="62" rx="7" fill="none" stroke="#FAF6F1" stroke-width="5.5"/>
+  <line x1="331" y1="162" x2="357" y2="162" stroke="#FAF6F1" stroke-width="5" stroke-linecap="round"/>
+  <line x1="331" y1="176" x2="357" y2="176" stroke="#FAF6F1" stroke-width="5" stroke-linecap="round"/>
+  <line x1="331" y1="190" x2="349" y2="190" stroke="#FAF6F1" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Bottom-center node (256, 356): Campaign money / donor mark ($) on String Red (#C0392B) -->
+  <circle cx="256" cy="356" r="56" fill="#C0392B"/>
+  <line x1="256" y1="322" x2="256" y2="390" stroke="#FAF6F1" stroke-width="7.5" stroke-linecap="round"/>
+  <path d="M272 340 C272 332 265 328 256 328 C245 328 239 334 239 341.5 C239 350 247 353 256 356 C265 359 273 362 273 370.5 C273 378 266 384 256 384 C246 384 239 379 239 371" fill="none" stroke="#FAF6F1" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

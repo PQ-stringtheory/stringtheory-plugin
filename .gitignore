@@ -1,0 +1,11 @@
+# Build & release artifacts
+dist/
+*.zip
+
+# OS & editor metadata
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

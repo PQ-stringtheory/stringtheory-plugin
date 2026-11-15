@@ -1,0 +1,47 @@
+{
+  "name": "stringtheory",
+  "version": "1.0.0",
+  "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
+  "author": {
+    "name": "PQ Labs",
+    "email": "support@pqlabs.org",
+    "url": "https://theory.pqlabs.org"
+  },
+  "homepage": "https://theory.pqlabs.org/developers",
+  "repository": "https://github.com/PQ-stringtheory/stringtheory-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "stringtheory",
+    "civic",
+    "congress",
+    "campaign-finance",
+    "legislation",
+    "lobbying",
+    "fec",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "StringTheory",
+    "shortDescription": "Trace U.S. campaign money, lobbying, bills, and congressional votes with primary-source receipts.",
+    "longDescription": "Investigate U.S. campaign finance (FEC Schedule A/B/E and Super PACs), lobbying disclosures (Senate LDA), congressional roll-call votes, STOCK Act stock trades, and clause-by-clause federal bill text X-rays — backed by verifiable primary-source receipts from StringTheory.",
+    "developerName": "PQ Labs",
+    "category": "Research",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://theory.pqlabs.org",
+    "privacyPolicyURL": "https://theory.pqlabs.org/privacy",
+    "termsOfServiceURL": "https://theory.pqlabs.org/terms",
+    "defaultPrompt": [
+      "Trace top industry donors and recent key votes for my senators",
+      "X-ray what a federal bill actually changes clause by clause",
+      "Verify a claim about Super PAC spending in a 2026 Senate race"
+    ],
+    "brandColor": "#C0392B",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg"
+  }
+}
