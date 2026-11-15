@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="StringTheory" width="96" height="96" />
+  <img src="assets/logo.png" alt="StringTheory" width="96" height="96" />
 </p>
 
 <h1 align="center">StringTheory — Official MCP Server & Civic Research Skills</h1>
@@ -128,7 +128,7 @@ Install **StringTheory** from the **Cursor Plugin Directory** (`.cursor-plugin/p
 
 #### OpenAI Codex CLI & Codex Plugin Directory (`.codex-plugin`)
 
-Install from the Codex Plugin Directory (or build the release archive via `./scripts/package-codex-zip.sh`), or add directly to `~/.codex/config.toml`:
+Install from the Codex Plugin Directory (or download the `.zip` archive from GitHub Releases), or add directly to `~/.codex/config.toml`:
 
 ```toml
 [mcp_servers.stringtheory]
@@ -193,7 +193,7 @@ Manage your OAuth connections, `st_live_...` API keys, and usage at **[theory.pq
 
 ```text
 stringtheory-plugin/
-├── assets/logo.svg                 # 512x512 StringTheory 3-node civic mark
+├── assets/logo.png                 # 512x512 StringTheory 3-node civic mark
 ├── skills/
 │   ├── civic-research/SKILL.md
 │   ├── money-to-vote-tracing/SKILL.md
@@ -212,7 +212,6 @@ stringtheory-plugin/
 ├── .codex-plugin/plugin.json       # OpenAI ChatGPT & Codex plugin manifest
 ├── .mcp.json                       # Claude Code & OpenAI Codex MCP server config
 ├── server.json                     # Official MCP Registry (org.pqlabs/stringtheory)
-├── scripts/package-codex-zip.sh    # Deterministic OpenAI/Codex .zip packager
 └── LICENSE                         # Apache-2.0
 ```
 

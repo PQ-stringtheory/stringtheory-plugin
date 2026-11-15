@@ -1,6 +1,6 @@
 {
   "name": "stringtheory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
   "author": {
     "name": "PQ Labs",
@@ -20,5 +20,6 @@
     "fec",
     "mcp"
   ],
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "privacyPolicyUrl": "https://theory.pqlabs.org/privacy"
 }

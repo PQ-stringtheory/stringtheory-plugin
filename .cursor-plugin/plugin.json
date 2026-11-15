@@ -1,7 +1,7 @@
 {
   "name": "stringtheory",
   "displayName": "StringTheory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
   "author": {
     "name": "PQ Labs",
@@ -11,7 +11,7 @@
   "homepage": "https://theory.pqlabs.org/developers",
   "repository": "https://github.com/PQ-stringtheory/stringtheory-plugin",
   "license": "Apache-2.0",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "keywords": [
     "stringtheory",
     "civic",

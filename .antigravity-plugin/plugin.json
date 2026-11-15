@@ -1,9 +1,9 @@
 {
   "name": "stringtheory",
   "displayName": "StringTheory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "suggestedPrompts": [
     "Trace top industry donors and recent key votes for my senators",
     "X-ray what a federal bill actually changes clause by clause",
