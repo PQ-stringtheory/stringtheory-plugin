@@ -3,7 +3,7 @@
   "name": "org.pqlabs/stringtheory",
   "title": "StringTheory",
   "description": "U.S. campaign finance, congressional votes, bill text X-ray, and primary-source civic receipts.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://theory.pqlabs.org/developers",
   "repository": {
     "url": "https://github.com/PQ-stringtheory/stringtheory-plugin",

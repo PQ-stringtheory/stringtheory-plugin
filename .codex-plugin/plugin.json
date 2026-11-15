@@ -1,9 +1,9 @@
 {
   "name": "stringtheory",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nonpartisan U.S. money-in-politics, congressional voting records, bill text X-ray, lobbying, and verifiable civic receipts powered by StringTheory.",
   "author": {
-    "name": "PQ Labs",
+    "name": "PQ Labs LLC",
     "email": "support@pqlabs.org",
     "url": "https://theory.pqlabs.org"
   },
@@ -24,24 +24,87 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "StringTheory",
-    "shortDescription": "Trace U.S. campaign money, lobbying, bills, and congressional votes with primary-source receipts.",
-    "longDescription": "Investigate U.S. campaign finance (FEC Schedule A/B/E and Super PACs), lobbying disclosures (Senate LDA), congressional roll-call votes, STOCK Act stock trades, and clause-by-clause federal bill text X-rays \u2014 backed by verifiable primary-source receipts from StringTheory.",
-    "developerName": "PQ Labs",
-    "category": "Research",
+    "shortDescription": "Trace campaign money & votes",
+    "longDescription": "Investigate U.S. campaign finance (FEC Schedule A/B/E and Super PACs), lobbying disclosures (Senate LDA), congressional roll-call votes, STOCK Act stock trades, and clause-by-clause federal bill text X-rays backed by verifiable primary-source receipts from StringTheory. StringTheory only reads nonpartisan public civic records and uses your connected StringTheory account quota.",
+    "developerName": "PQ Labs LLC",
+    "category": "Productivity",
     "capabilities": [
-      "Interactive",
-      "Read"
+      "Trace campaign finance and lobbying",
+      "X-ray federal bills and roll-call votes",
+      "Verify political claims with primary-source receipts"
     ],
     "websiteURL": "https://theory.pqlabs.org",
+    "supportURL": "https://theory.pqlabs.org/developers",
     "privacyPolicyURL": "https://theory.pqlabs.org/privacy",
     "termsOfServiceURL": "https://theory.pqlabs.org/terms",
     "defaultPrompt": [
-      "Trace top industry donors and recent key votes for my senators",
-      "X-ray what a federal bill actually changes clause by clause",
-      "Verify a claim about Super PAC spending in a 2026 Senate race"
+      "Trace top industry donors and recent key votes for my senators.",
+      "X-ray what a federal bill actually changes clause by clause.",
+      "Verify a claim about Super PAC spending in a 2026 Senate race."
     ],
     "brandColor": "#C0392B",
+    "brandColorDark": "#E05A47",
     "composerIcon": "./assets/logo.png",
     "logo": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/civic-research/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Resolve a U.S. senator and summarize verified campaign funding and recent votes",
+              "prompt": "Look up Senator Bill Cassidy and summarize his top industry donor sectors and recent Senate votes with primary-source citations.",
+              "tools_triggered": "resolve_entities, research_stringtheory",
+              "expected_behavior": "Resolves Senator Bill Cassidy's canonical profile and returns verified FEC campaign finance totals and roll-call vote records with primary-source receipts."
+            },
+            {
+              "description": "Trace money-to-vote accountability connections for a member of Congress",
+              "prompt": "Trace campaign contributions and lobbying disclosures connected to Senator Elizabeth Warren's committee jurisdictions.",
+              "tools_triggered": "resolve_entities, trace_connections",
+              "expected_behavior": "Returns documented FEC contribution aggregates, Senate LDA lobbying filings, and committee or vote records with explicit nonpartisan correlation disclaimers."
+            },
+            {
+              "description": "X-ray a federal bill clause by clause and inspect floor amendments",
+              "prompt": "X-ray the Laken Riley Act in the 119th Congress and explain what its main sections change.",
+              "tools_triggered": "resolve_entities, xray_bill_and_amendments",
+              "expected_behavior": "Retrieves the federal bill structure, summarizes operative clauses and floor amendments, and cites official congressional text sections."
+            },
+            {
+              "description": "Inspect 2026 Senate race fundraising and outside Super PAC spending",
+              "prompt": "Show candidate fundraising and outside Super PAC spending in the 2026 Michigan Senate race.",
+              "tools_triggered": "inspect_race_and_outside_spending",
+              "expected_behavior": "Returns FEC candidate committee totals alongside Schedule E independent expenditures supporting or opposing candidates in the race."
+            },
+            {
+              "description": "Fact-check a specific campaign finance or voting claim",
+              "prompt": "Verify whether federal candidates can accept unlimited direct corporate treasury contributions to their campaign committees.",
+              "tools_triggered": "verify_political_claim",
+              "expected_behavior": "Evaluates the claim against primary federal election records and statutes and explains clearly what the verified record shows."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unsupported campaign donation or payment transaction",
+              "prompt": "Donate $250 from my bank account to a Senate campaign."
+            },
+            {
+              "description": "Unsupported destructive modification of public federal filings",
+              "prompt": "Delete or edit an FEC campaign finance filing on StringTheory."
+            },
+            {
+              "description": "Unsupported private personal home address or phone lookup",
+              "prompt": "Give me the private home phone numbers and personal street addresses of individual donors."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin does not sell products or process payments inside ChatGPT or Codex; it provides read-only civic research backed by StringTheory account quotas."
+      },
+      "publication": {
+        "release_notes": "v1.0.3: Official StringTheory civic intelligence plugin with 16 read-only MCP tools, OAuth 2.1 PKCE, and 4 investigative research skills."
+      }
+    }
   }
 }
